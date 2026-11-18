@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduardo Martinez | Ingeniería en Sistemas</title>
+  <style>
+    /* 1. Variables y reinicio básico */
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    /* 2. Contenedor principal centrado */
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* 3. Encabezado */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      margin-bottom: 24px;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border: 1px solid #334155;
+      border-radius: 16px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    header p {
+      color: var(--accent);
+      font-weight: 500;
+      font-size: 1.05rem;
+    }
+
+    /* 4. Tarjetas de contenido */
+    section {
+      background-color: var(--card-bg);
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 14px;
+      color: var(--accent);
+      border-bottom: 1px solid #334155;
+      padding-bottom: 8px;
+    }
+
+    p {
+      color: var(--text-muted);
+    }
+
+    /* 5. Lista de intereses en etiquetas (Badges) */
+    .interests-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .interests-list li {
+      background-color: #0f172a;
+      color: var(--text-main);
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      border: 1px solid #334155;
+    }
+
+    /* 6. Lista de aprendizaje */
+    .learning-list {
+      list-style-position: inside;
+      color: var(--text-muted);
+    }
+
+    .learning-list li {
+      margin-bottom: 8px;
+    }
+
+    /* 7. Botón de GitHub y pie de página */
+    .github-section {
+      text-align: center;
+      padding: 10px 0 30px;
+    }
+
+    .btn-github {
+      display: inline-block;
+      background-color: var(--accent);
+      color: #0f172a;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn-github:hover {
+      background-color: var(--accent-hover);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    /* 8. Ajustes para pantallas pequeñas (celulares) */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.75rem;
+      }
+
+      section {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Encabezado -->
+    <header>
+      <h1>Eduardo Martinez</h1>
+      <p>Estudiante de Ingeniería en Sistemas Computacionales · Universidad La Salle Chihuahua</p>
+    </header>
+
+    <!-- Sección Sobre mí -->
+    <section>
+      <h2>Sobre mí</h2>
+      <p>
+        ¡Hola! Soy Eduardo, estudiante de primer semestre de Ingeniería en Sistemas Computacionales en la Universidad La Salle Chihuahua. Me apasiona entender cómo funciona la tecnología desde sus bases, resolver problemas lógicos mediante programación y construir soluciones útiles desde cero.
+      </p>
+    </section>
+
+    <!-- Lista de intereses -->
+    <section>
+      <h2>Mis intereses</h2>
+      <ul class="interests-list">
+        <li>🏐 Voleibol</li>
+        <li>🎮 Videojuegos</li>
+        <li>💻 Programación y tecnología</li>
+      </ul>
+    </section>
+
+    <!-- Sección Lo que quiero aprender -->
+    <section>
+      <h2>Lo que quiero aprender</h2>
+      <ul class="learning-list">
+        <li>Dominar estructuras de datos y programación orientada a objetos (Python, C++ y Java).</li>
+        <li>Crear aplicaciones web completas (Frontend y Backend) con bases de datos reales.</li>
+        <li>Aprender control de versiones profesional con Git y flujos de trabajo colaborativos.</li>
+        <li>Explorar fundamentos de desarrollo de videojuegos y automatización de procesos.</li>
+      </ul>
+    </section>
+
+    <!-- Enlace a GitHub -->
+    <div class="github-section">
+      <a href="https://github.com/ImmoZx" target="_blank" rel="noopener noreferrer" class="btn-github">
+        Ver mi perfil en GitHub (@ImmoZx)
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
